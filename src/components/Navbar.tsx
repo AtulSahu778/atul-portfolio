@@ -59,6 +59,7 @@ export default function Navbar() {
             ))}
           </ul>
           <ThemeToggle />
+          <a href="/Atul-Resume.pdf" download></a>
           <Button size="sm">Resume</Button>
         </nav>
 
