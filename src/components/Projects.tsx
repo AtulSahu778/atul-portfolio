@@ -20,8 +20,8 @@ const projects: Project[] = [
     description: "A pixel-perfect front-end clone of Apple's official website, built to replicate the clean aesthetics, smooth animations, and responsive layout Apple is known for. This project showcases my skills in modern HTML, CSS, and JavaScript, with an emphasis on layout precision, interactivity, and design detail.",
     tags: ["HTML", "CSS", "JavaScript", "Tailwind", "Responsive"],
     image: "/apple1.png",
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "https://applebyatul.vercel.app/",
+    githubUrl: "https://github.com/AtulSahu778/apple-clone",
   },
   {
     id: 2,
@@ -29,8 +29,8 @@ const projects: Project[] = [
     description: "Hackathon project to support rural populations with healthcare and sustainable development solutions. Focused on accessibility and user-friendly interfaces.",
     tags: ["HTML", "CSS", "JavaScript", "Hackathon"],
     image: "/screenshot.png",
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "https://hackathon-arka-jain.vercel.app/",
+    githubUrl: "https://github.com/AtulSahu778/gramseva-hck114",
   },
   
   {
@@ -39,8 +39,8 @@ const projects: Project[] = [
     description: "A frontend YouTube replica built with HTML, CSS & JavaScript. Features responsive design and interactive elements that mimic the real platform.",
     tags: ["HTML", "CSS", "JavaScript", "Responsive"],
     image: "https://images.unsplash.com/photo-1611162616475-46b635cb6868?ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80",
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "https://youtube-clone-atul.vercel.app/",
+    githubUrl: "https://github.com/AtulSahu778/youtube-clone",
   },
   {
     id: 4,
@@ -48,8 +48,8 @@ const projects: Project[] = [
     description: "A clean UI clone of the Amazon website with product listings, cart functionality, and responsive layout for different screen sizes.",
     tags: ["HTML", "CSS", "JavaScript", "E-commerce"],
     image: "https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80",
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "https://amazon-clone-atul-mu.vercel.app/",
+    githubUrl: "https://github.com/AtulSahu778/amazon-clone",
   },
   {
     id: 5,
@@ -57,8 +57,8 @@ const projects: Project[] = [
     description: "A personal animated portfolio showcasing my frontend work, designed and deployed with love. Features smooth animations and interactive elements.",
     tags: ["HTML", "CSS", "JavaScript", "Tailwind"],
     image: "https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80",
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "https://atuldev.vercel.app/",
+    githubUrl: "https://github.com/AtulSahu778/atul-portfolio",
   },
 ];
 
