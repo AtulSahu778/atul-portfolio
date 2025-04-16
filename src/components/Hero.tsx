@@ -28,7 +28,7 @@ export default function Hero() {
             </h1>
             
             <h2 className="text-xl sm:text-2xl text-muted-foreground">
-              Frontend Developer | Developer | Techy
+              Founder | Developer | Techy
             </h2>
             
             <div className="flex flex-wrap gap-4">
