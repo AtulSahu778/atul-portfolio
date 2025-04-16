@@ -21,7 +21,7 @@ export default function About() {
             <div className="absolute -inset-1 bg-gradient-to-r from-portfolio-blue to-portfolio-purple rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000"></div>
             <div className="relative aspect-square rounded-lg overflow-hidden">
               <img 
-              src="/public/atul-sqr.png" alt="" 
+              src="/atul-sqr.png" alt="" 
               />
               <div className="w-full h-full bg-muted flex items-center justify-center">
                 <div className="text-8xl font-bold text-primary"></div>
