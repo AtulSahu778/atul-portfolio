@@ -13,39 +13,41 @@ type ExperienceItem = {
 const experiences: ExperienceItem[] = [
   {
     id: 1,
-    role: "Senior Full Stack Developer",
-    company: "Tech Solutions Inc",
-    location: "San Francisco, CA",
-    period: "2020 - Present",
+    role: "B.Sc. Info. Technology Student",
+    company: "St. Xavier's College, Ranchi",
+    location: "Ranchi, Jharkhand",
+    period: "2025 - Present",
     description: [
-      "Led a team of 5 developers in building a high-traffic e-commerce platform using React, Node.js, and MongoDB",
-      "Implemented CI/CD pipeline that reduced deployment time by 70%",
-      "Optimized database queries, resulting in a 50% reduction in page load times",
+      "Currently pursuing 1st year of Bachelor of Science (BSc).",
+      "Learning core subjects including Mathematics, Computer Science, and DSA.",
+      "Actively building foundational knowledge in both theory and practicals to prepare for future specialization.",
     ],
   },
   {
     id: 2,
-    role: "Full Stack Developer",
-    company: "Digital Innovations",
-    location: "New York, NY",
-    period: "2018 - 2020",
+    role: "Founder ",
+    company: "The Hustlers Community",
+    location: "Ranchi, Jharkhand",
+    period: "2024 - Last Year",
     description: [
-      "Developed and maintained multiple client websites using JavaScript, React, and Express",
-      "Collaborated with UX designers to implement responsive user interfaces",
-      "Created RESTful APIs that integrated with third-party services",
+      "Founded and currently lead the Hustlers Community with over 500 active members.",
+      "Foster collaboration among students and developers through events, discussions, and peer learning.",
+      "Built a supportive environment that encourages personal growth, networking, and project-based learning.",
     ],
+    
   },
   {
     id: 3,
-    role: "Front-End Developer",
-    company: "Web Creations Co",
-    location: "Austin, TX",
-    period: "2016 - 2018",
+    role: "Robo Fest",
+    company: "Infoage Institute Sundargarh",
+    location: "Sundargarh, Odisha",
+    period: "2023",
     description: [
-      "Built interactive user interfaces using HTML, CSS, and JavaScript",
-      "Participated in code reviews and implemented feedback to improve code quality",
-      "Worked with APIs to integrate data into front-end applications",
+      "Won RoboFest competition showcasing innovation in robotics and automation.",
+      "Developed an IoT-based project to transform traditional homes into smart homes using sensors and microcontrollers.",
+      "Built a Rubik's Cube solver using logic programming and mechanical design for autonomous solving.",
     ],
+    
   },
 ];
 

@@ -44,7 +44,7 @@ export default function Hero() {
             </div>
             
             <div className="flex items-center gap-4 pt-4">
-              <a href="https://github.com/Ofc_atul" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <a href="https://github.com/AtulSahu778" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <Button variant="ghost" size="icon" className="rounded-full">
                   <Github className="h-5 w-5" />
                 </Button>
