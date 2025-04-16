@@ -59,8 +59,10 @@ export default function Navbar() {
             ))}
           </ul>
           <ThemeToggle />
-          <a href="/Atul-Resume.pdf" download></a>
+          <a href="/Atul-Resume.pdf" download>
           <Button size="sm">Resume</Button>
+          </a>
+          
         </nav>
 
         {/* Mobile Navigation Trigger */}
