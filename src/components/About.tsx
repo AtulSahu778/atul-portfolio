@@ -35,7 +35,7 @@ export default function About() {
                 />
                 <AvatarFallback>AS</AvatarFallback>
               </Avatar>
-434e798a88a4d438537784b38b9b6a1775d0856c
+
             </div>
           </div>
           
@@ -56,7 +56,7 @@ export default function About() {
             </p>
 
 
-            <a href="/public/Atul-Resume.pdf" download>
+            <a href="/Atul-Resume.pdf" download>
               <Button className="gap-2">
                 <FileText className="h-4 w-4" /> Download Resume
               </Button>
