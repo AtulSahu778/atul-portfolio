@@ -32,6 +32,7 @@ export default function Hero() {
             </h2>
             
             <div className="flex flex-wrap gap-4">
+              <link  href="#contact" />
               <Button size="lg" className="gap-2">
                 Contact Me <ArrowRight className="h-4 w-4" />
               </Button>
