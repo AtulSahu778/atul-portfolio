@@ -5,7 +5,7 @@ import { Badge } from "./ui/badge";
 
 type Skill = {
   name: string;
-  icon: React.ComponentType;
+  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
   category: "frontend" | "tools" | "learning";
 };
 
@@ -59,14 +59,14 @@ export default function Skills() {
                 {skills
                   .filter((skill) => skill.category === category.id)
                   .map((skill) => {
-                    const Icon = skill.icon;
+                    const IconComponent = skill.icon;
                     return (
                       <div 
                         key={skill.name}
                         className="flex flex-col items-center p-4 rounded-lg hover:bg-white/5 transition-colors"
                       >
                         <div className="p-3 rounded-full bg-white/10 mb-3">
-                          <Icon className="w-8 h-8 text-portfolio-purple" />
+                          <IconComponent className="w-8 h-8 text-portfolio-purple" />
                         </div>
                         <Badge variant="secondary">{skill.name}</Badge>
                       </div>
