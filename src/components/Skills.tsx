@@ -1,11 +1,10 @@
-
 import React from "react";
-import { Code, FileJson, Terminal, GitBranch, Github, MonitorPlay, Server } from "lucide-react";
+import { Code, FileJson, Terminal, GitBranch, Github, MonitorPlay, Server, Figma, PencilRuler, Layout, Framer, Workflow, CloudCog, Bot } from "lucide-react";
 import { Badge } from "./ui/badge";
 
 type Skill = {
   name: string;
-  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+  icon: React.ComponentType<{ className?: string }>;
   category: "frontend" | "tools" | "learning";
 };
 
@@ -14,14 +13,24 @@ const skills: Skill[] = [
   { name: "HTML", icon: Code, category: "frontend" },
   { name: "CSS", icon: FileJson, category: "frontend" },
   { name: "JavaScript", icon: Terminal, category: "frontend" },
+  { name: "Figma", icon: Figma, category: "frontend" },
+  { name: "Canva", icon: PencilRuler, category: "frontend" },
+  { name: "Wix", icon: Layout, category: "frontend" },
+  { name: "Framer", icon: Framer, category: "frontend" },
   
   // Tools
   { name: "Git", icon: GitBranch, category: "tools" },
   { name: "GitHub", icon: Github, category: "tools" },
+  { name: "Vercel", icon: Workflow, category: "tools" },
+  { name: "Netlify", icon: CloudCog, category: "tools" },
+  { name: "Cursor AI", icon: Bot, category: "tools" },
+  { name: "Windsurf AI", icon: Bot, category: "tools" },
   
   // Learning
   { name: "React", icon: MonitorPlay, category: "learning" },
   { name: "Node.js", icon: Server, category: "learning" },
+  { name: "MongoDB", icon: Server, category: "learning" },
+  { name: "Express.js", icon: Server, category: "learning" },
 ];
 
 export default function Skills() {
