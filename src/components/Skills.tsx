@@ -1,5 +1,6 @@
+
 import React from "react";
-import { Code, FileJson, Terminal, GitBranch, Github, MonitorPlay, Server, Figma, PencilRuler, Layout, Framer, Workflow, CloudCog, Bot } from "lucide-react";
+import { Code, FileJson, Terminal, GitBranch, Github, MonitorPlay, Server, Figma, PencilRuler, Layout, Framer, Workflow, CloudCog, Bot, Globe } from "lucide-react";
 import { Badge } from "./ui/badge";
 
 type Skill = {
@@ -31,6 +32,7 @@ const skills: Skill[] = [
   { name: "Node.js", icon: Server, category: "learning" },
   { name: "MongoDB", icon: Server, category: "learning" },
   { name: "Express.js", icon: Server, category: "learning" },
+  { name: "Next.js", icon: Globe, category: "learning" },
 ];
 
 export default function Skills() {
