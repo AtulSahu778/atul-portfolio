@@ -26,36 +26,39 @@ const skills: Skill[] = [
 
 export default function Skills() {
   const categories = [
-    { id: "frontend", name: "Frontend" },
-    { id: "tools", name: "Tools & Frameworks" },
+    { id: "frontend", name: "Frontend Development" },
+    { id: "tools", name: "Development Tools" },
     { id: "learning", name: "Currently Learning" },
   ];
 
   return (
-    <section className="py-16 relative">
-      <div className="absolute top-0 right-0 w-72 h-72 bg-portfolio-purple/10 rounded-full blur-3xl -z-10" />
+    <section className="py-24 relative overflow-hidden">
+      {/* Background gradients */}
+      <div className="absolute top-0 right-0 w-96 h-96 bg-portfolio-purple/10 rounded-full blur-3xl -z-10" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-portfolio-blue/10 rounded-full blur-3xl -z-10" />
       
       <div className="section-container">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            My Skills
+          <h2 className="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-portfolio-blue to-portfolio-purple bg-clip-text text-transparent">
+            Technical Skills
           </h2>
-          <div className="h-1 w-20 bg-primary mx-auto"></div>
-          <p className="mt-6 text-muted-foreground">
-            I've worked with a variety of technologies in frontend development. 
-            Here's an overview of my technical skills:
+          <p className="text-lg text-muted-foreground">
+            A collection of technologies and tools I work with
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {categories.map((category) => (
-            <div key={category.id} className="glass-card p-6 animate-fade-in">
-              <h3 className="text-xl font-bold mb-4 flex items-center">
-                <div className="h-2 w-8 rounded-full bg-gradient-to-r from-portfolio-blue to-portfolio-purple mr-3"></div>
+            <div 
+              key={category.id} 
+              className="glass-card p-8 backdrop-blur-lg animate-fade-in hover:shadow-xl transition-all duration-300"
+            >
+              <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
+                <div className="h-1.5 w-12 rounded-full bg-gradient-to-r from-portfolio-blue to-portfolio-purple"></div>
                 {category.name}
               </h3>
               
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
+              <div className="grid grid-cols-2 gap-6">
                 {skills
                   .filter((skill) => skill.category === category.id)
                   .map((skill) => {
@@ -63,12 +66,14 @@ export default function Skills() {
                     return (
                       <div 
                         key={skill.name}
-                        className="flex flex-col items-center p-4 rounded-lg hover:bg-white/5 transition-colors"
+                        className="flex flex-col items-center p-4 rounded-xl hover:bg-white/5 transition-all duration-300 hover:transform hover:scale-105"
                       >
-                        <div className="p-3 rounded-full bg-white/10 mb-3">
+                        <div className="p-4 rounded-full bg-gradient-to-br from-portfolio-blue/10 to-portfolio-purple/10 mb-4 backdrop-blur-sm">
                           <IconComponent className="w-8 h-8 text-portfolio-purple" />
                         </div>
-                        <Badge variant="secondary">{skill.name}</Badge>
+                        <Badge variant="secondary" className="font-medium text-base">
+                          {skill.name}
+                        </Badge>
                       </div>
                     );
                   })}
