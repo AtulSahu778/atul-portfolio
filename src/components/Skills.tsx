@@ -1,38 +1,37 @@
-
 import React from "react";
 import { Code, FileJson, Terminal, GitBranch, Github, MonitorPlay, Server, Figma, PencilRuler, Layout, Framer, Workflow, CloudCog, Bot, Globe } from "lucide-react";
 import { Badge } from "./ui/badge";
 
 type Skill = {
   name: string;
-  icon: React.ComponentType<{ className?: string }>;
+  logo: string;
   category: "frontend" | "tools" | "learning";
 };
 
 const skills: Skill[] = [
   // Frontend
-  { name: "HTML", icon: Code, category: "frontend" },
-  { name: "CSS", icon: FileJson, category: "frontend" },
-  { name: "JavaScript", icon: Terminal, category: "frontend" },
-  { name: "Figma", icon: Figma, category: "frontend" },
-  { name: "Canva", icon: PencilRuler, category: "frontend" },
-  { name: "Wix", icon: Layout, category: "frontend" },
-  { name: "Framer", icon: Framer, category: "frontend" },
+  { name: "HTML", logo: "/logos/html.svg", category: "frontend" },
+  { name: "CSS", logo: "/logos/css.svg", category: "frontend" },
+  { name: "JavaScript", logo: "/logos/javascript.svg", category: "frontend" },
+  { name: "Figma", logo: "/logos/figma.svg", category: "frontend" },
+  { name: "Canva", logo: "/logos/canva.svg", category: "frontend" },
+  { name: "Wix", logo: "/logos/wix.svg", category: "frontend" },
+  { name: "Framer", logo: "/logos/framer.svg", category: "frontend" },
   
   // Tools
-  { name: "Git", icon: GitBranch, category: "tools" },
-  { name: "GitHub", icon: Github, category: "tools" },
-  { name: "Vercel", icon: Workflow, category: "tools" },
-  { name: "Netlify", icon: CloudCog, category: "tools" },
-  { name: "Cursor AI", icon: Bot, category: "tools" },
-  { name: "Windsurf AI", icon: Bot, category: "tools" },
+  { name: "Git", logo: "/logos/git.svg", category: "tools" },
+  { name: "GitHub", logo: "/logos/github.svg", category: "tools" },
+  { name: "Vercel", logo: "/logos/vercel.svg", category: "tools" },
+  { name: "Netlify", logo: "/logos/netlify.svg", category: "tools" },
+  { name: "Cursor AI", logo: "/logos/cursor.svg", category: "tools" },
+  { name: "Windsurf AI", logo: "/logos/windsurf.svg", category: "tools" },
   
   // Learning
-  { name: "React", icon: MonitorPlay, category: "learning" },
-  { name: "Node.js", icon: Server, category: "learning" },
-  { name: "MongoDB", icon: Server, category: "learning" },
-  { name: "Express.js", icon: Server, category: "learning" },
-  { name: "Next.js", icon: Globe, category: "learning" },
+  { name: "React", logo: "/logos/react.svg", category: "learning" },
+  { name: "Node.js", logo: "/logos/nodejs.svg", category: "learning" },
+  { name: "MongoDB", logo: "/logos/mongodb.svg", category: "learning" },
+  { name: "Express.js", logo: "/logos/express.svg", category: "learning" },
+  { name: "Next.js", logo: "/logos/nextjs.svg", category: "learning" },
 ];
 
 export default function Skills() {
@@ -72,22 +71,23 @@ export default function Skills() {
               <div className="grid grid-cols-2 gap-6">
                 {skills
                   .filter((skill) => skill.category === category.id)
-                  .map((skill) => {
-                    const IconComponent = skill.icon;
-                    return (
-                      <div 
-                        key={skill.name}
-                        className="flex flex-col items-center p-4 rounded-xl hover:bg-white/5 transition-all duration-300 hover:transform hover:scale-105"
-                      >
-                        <div className="p-4 rounded-full bg-gradient-to-br from-portfolio-blue/10 to-portfolio-purple/10 mb-4 backdrop-blur-sm">
-                          <IconComponent className="w-8 h-8 text-portfolio-purple" />
-                        </div>
-                        <Badge variant="secondary" className="font-medium text-base">
-                          {skill.name}
-                        </Badge>
+                  .map((skill) => (
+                    <div 
+                      key={skill.name}
+                      className="flex flex-col items-center p-4 rounded-xl hover:bg-white/5 transition-all duration-300 hover:transform hover:scale-105"
+                    >
+                      <div className="p-4 rounded-full bg-gradient-to-br from-portfolio-blue/10 to-portfolio-purple/10 mb-4 backdrop-blur-sm">
+                        <img 
+                          src={skill.logo} 
+                          alt={`${skill.name} logo`}
+                          className="w-8 h-8 object-contain"
+                        />
                       </div>
-                    );
-                  })}
+                      <Badge variant="secondary" className="font-medium text-base">
+                        {skill.name}
+                      </Badge>
+                    </div>
+                  ))}
               </div>
             </div>
           ))}
