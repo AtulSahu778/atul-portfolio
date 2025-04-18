@@ -23,14 +23,13 @@ const skills: Skill[] = [
   { name: "GitHub", logo: "/logos/github.svg", category: "tools" },
   { name: "Vercel", logo: "/logos/vercel.svg", category: "tools" },
   { name: "Netlify", logo: "/logos/netlify.svg", category: "tools" },
-  { name: "Cursor AI", logo: "/logos/cursor.svg", category: "tools" },
-  { name: "Windsurf AI", logo: "/logos/windsurf.svg", category: "tools" },
+  { name: "Cursor AI", logo: "https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/cursor.png", category: "tools" },
   
   // Learning
   { name: "React", logo: "/logos/react.svg", category: "learning" },
   { name: "Node.js", logo: "/logos/nodejs.svg", category: "learning" },
-  { name: "MongoDB", logo: "/logos/mongodb.svg", category: "learning" },
-  { name: "Express.js", logo: "/logos/express.svg", category: "learning" },
+  { name: "MongoDB", logo: "https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg", category: "learning" },
+  { name: "Express.js", logo: "https://icon.icepanel.io/Technology/png-shadow-512/Express.png", category: "learning" },
   { name: "Next.js", logo: "/logos/nextjs.svg", category: "learning" },
 ];
 
