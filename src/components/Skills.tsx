@@ -1,30 +1,27 @@
 
 import React from "react";
+import { Html, Css, Javascript, Git, Github, ReactIcon, nodejs } from "lucide-react";
+import { Badge } from "./ui/badge";
 
 type Skill = {
   name: string;
-  level: number; // 1-10
+  icon: React.ComponentType;
   category: "frontend" | "tools" | "learning";
 };
 
 const skills: Skill[] = [
   // Frontend
-  { name: "HTML", level: 9, category: "frontend" },
-  { name: "CSS", level: 8, category: "frontend" },
-  { name: "JavaScript", level: 7, category: "frontend" },
-  { name: "Responsive Design", level: 8, category: "frontend" },
-  { name: "UI/UX Fundamentals", level: 7, category: "frontend" },
+  { name: "HTML", icon: Html, category: "frontend" },
+  { name: "CSS", icon: Css, category: "frontend" },
+  { name: "JavaScript", icon: Javascript, category: "frontend" },
   
   // Tools
-  { name: "Tailwind CSS", level: 8, category: "tools" },
-  { name: "Git & GitHub", level: 7, category: "tools" },
-  { name: "Vercel", level: 8, category: "tools" },
+  { name: "Git", icon: Git, category: "tools" },
+  { name: "GitHub", icon: Github, category: "tools" },
   
   // Learning
-  { name: "React", level: 2, category: "learning" },
-  { name: "Next.js", level: 2, category: "learning" },
-  { name: "Node.js", level: 2, category: "learning" },
-  { name: "Express.js", level: 2, category: "learning" },
+  { name: "React", icon: ReactIcon, category: "learning" },
+  { name: "Node.js", icon: nodejs, category: "learning" },
 ];
 
 export default function Skills() {
@@ -58,25 +55,23 @@ export default function Skills() {
                 {category.name}
               </h3>
               
-              <div className="space-y-6">
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
                 {skills
                   .filter((skill) => skill.category === category.id)
-                  .map((skill) => (
-                    <div key={skill.name}>
-                      <div className="flex justify-between mb-1">
-                        <span className="font-medium">{skill.name}</span>
-                        <span className="text-muted-foreground text-sm">
-                          {skill.level * 10}%
-                        </span>
+                  .map((skill) => {
+                    const Icon = skill.icon;
+                    return (
+                      <div 
+                        key={skill.name}
+                        className="flex flex-col items-center p-4 rounded-lg hover:bg-white/5 transition-colors"
+                      >
+                        <div className="p-3 rounded-full bg-white/10 mb-3">
+                          <Icon className="w-8 h-8 text-portfolio-purple" />
+                        </div>
+                        <Badge variant="secondary">{skill.name}</Badge>
                       </div>
-                      <div className="h-2 w-full bg-muted rounded-full overflow-hidden">
-                        <div 
-                          className="h-full bg-gradient-to-r from-portfolio-blue to-portfolio-purple rounded-full"
-                          style={{ width: `${skill.level * 10}%` }}
-                        ></div>
-                      </div>
-                    </div>
-                  ))}
+                    );
+                  })}
               </div>
             </div>
           ))}
