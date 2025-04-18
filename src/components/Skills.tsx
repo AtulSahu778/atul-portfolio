@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Html, Css, Javascript, Git, Github, ReactIcon, nodejs } from "lucide-react";
+import { Code, FileJson, Terminal, GitBranch, Github, MonitorPlay, Server } from "lucide-react";
 import { Badge } from "./ui/badge";
 
 type Skill = {
@@ -11,17 +11,17 @@ type Skill = {
 
 const skills: Skill[] = [
   // Frontend
-  { name: "HTML", icon: Html, category: "frontend" },
-  { name: "CSS", icon: Css, category: "frontend" },
-  { name: "JavaScript", icon: Javascript, category: "frontend" },
+  { name: "HTML", icon: Code, category: "frontend" },
+  { name: "CSS", icon: FileJson, category: "frontend" },
+  { name: "JavaScript", icon: Terminal, category: "frontend" },
   
   // Tools
-  { name: "Git", icon: Git, category: "tools" },
+  { name: "Git", icon: GitBranch, category: "tools" },
   { name: "GitHub", icon: Github, category: "tools" },
   
   // Learning
-  { name: "React", icon: ReactIcon, category: "learning" },
-  { name: "Node.js", icon: nodejs, category: "learning" },
+  { name: "React", icon: MonitorPlay, category: "learning" },
+  { name: "Node.js", icon: Server, category: "learning" },
 ];
 
 export default function Skills() {
