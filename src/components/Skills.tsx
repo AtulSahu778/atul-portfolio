@@ -14,8 +14,8 @@ const skills: Skill[] = [
   { name: "CSS", logo: "/logos/css.svg", category: "frontend" },
   { name: "JavaScript", logo: "/logos/javascript.svg", category: "frontend" },
   { name: "Figma", logo: "/logos/figma.svg", category: "frontend" },
-  { name: "Canva", logo: "/logos/canva.svg", category: "frontend" },
-  { name: "Wix", logo: "/logos/wix.svg", category: "frontend" },
+  { name: "Canva", logo: "https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Canva_Logo.svg/480px-Canva_Logo.svg.png?20250414221227", category: "frontend" },
+  { name: "Wix", logo: "https://www.svgrepo.com/show/333491/wix.svg", category: "frontend" },
   { name: "Framer", logo: "/logos/framer.svg", category: "frontend" },
   
   // Tools
