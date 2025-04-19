@@ -23,7 +23,7 @@ const skills: Skill[] = [
   { name: "GitHub", logo: "/logos/github.svg", category: "tools" },
   { name: "Vercel", logo: "/logos/vercel.svg", category: "tools" },
   { name: "Netlify", logo: "/logos/netlify.svg", category: "tools" },
-  { name: "Cursor AI", logo: "https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/cursor.png", category: "tools" },
+  { name: "Cursor", logo: "https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/cursor.png", category: "tools" },
   
   // Learning
   { name: "React", logo: "/logos/react.svg", category: "learning" },
