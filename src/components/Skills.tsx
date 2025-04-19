@@ -17,12 +17,14 @@ const skills: Skill[] = [
   { name: "Canva", logo: "https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Canva_Logo.svg/480px-Canva_Logo.svg.png?20250414221227", category: "frontend" },
   { name: "Wix", logo: "https://www.svgrepo.com/show/333491/wix.svg", category: "frontend" },
   { name: "Framer", logo: "/logos/framer.svg", category: "frontend" },
+  { name: "Chrome Dev", logo: "https://www.svgrepo.com/show/378786/chrome-devtools.svg", category: "frontend" },
   
   // Tools
   { name: "Git", logo: "/logos/git.svg", category: "tools" },
   { name: "GitHub", logo: "/logos/github.svg", category: "tools" },
   { name: "Vercel", logo: "/logos/vercel.svg", category: "tools" },
   { name: "Netlify", logo: "/logos/netlify.svg", category: "tools" },
+  { name: "ChataGPT", logo: "https://cdn.worldvectorlogo.com/logos/chatgpt-3.svg", category: "tools" },
   { name: "Cursor", logo: "https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/cursor.png", category: "tools" },
   
   // Learning
@@ -31,6 +33,7 @@ const skills: Skill[] = [
   { name: "MongoDB", logo: "https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg", category: "learning" },
   { name: "Express.js", logo: "https://icon.icepanel.io/Technology/png-shadow-512/Express.png", category: "learning" },
   { name: "Next.js", logo: "/logos/nextjs.svg", category: "learning" },
+  { name: "Lovable.dev", logo: "https://lovable.dev/icon.svg?3d7ac3d2bb57ecbe", category: "learning" },
 ];
 
 export default function Skills() {
