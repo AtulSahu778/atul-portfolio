@@ -65,7 +65,7 @@ const projects: Project[] = [
     title: "Jigaysa Quiz",
     description: "An interactive quiz app showcasing my frontend work, designed and deployed with love. Features smooth animations and interactive elements.",
     tags: ["HTML", "CSS", "JavaScript"],
-    image: "https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80",
+    image: "/jigyasa.png",
     liveUrl: "https://jigyasa-quiz.vercel.app/",
     githubUrl: "https://github.com/AtulSahu778/quiz-app",
   },
