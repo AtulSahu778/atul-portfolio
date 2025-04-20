@@ -16,6 +16,15 @@ type Project = {
 const projects: Project[] = [
   {
     id: 1,
+    title: "Jigyasa AI",
+    description: `Jigyasa AI (meaning "curiosity" in Sanskrit) is a fully responsive, feature-rich chatbot interface built around Google’s Gemini 2.0 Flash API. While it doesn't involve training a custom AI model, this project focuses on delivering an intuitive, clean, and dynamic frontend user experience for AI-powered conversations.`,
+    tags: ["HTML", "CSS", "JavaScript", "Tailwind", "Responsive"],
+    image: "/jigysa.png",
+    liveUrl: "https://ai-jigyasa.verce.app",
+    githubUrl: "https://github.com/AtulSahu778/Jigyasa-AI",
+  },
+  {
+    id: 2,
     title: "Apple Clone",
     description: "A pixel-perfect front-end clone of Apple's official website, built to replicate the clean aesthetics, smooth animations, and responsive layout Apple is known for. This project showcases my skills in modern HTML, CSS, and JavaScript, with an emphasis on layout precision, interactivity, and design detail.",
     tags: ["HTML", "CSS", "JavaScript", "Tailwind", "Responsive"],
@@ -24,7 +33,7 @@ const projects: Project[] = [
     githubUrl: "https://github.com/AtulSahu778/apple-clone",
   },
   {
-    id: 2,
+    id: 3,
     title: "Gramseva",
     description: "Hackathon project to support rural populations with healthcare and sustainable development solutions. Focused on accessibility and user-friendly interfaces.",
     tags: ["HTML", "CSS", "JavaScript", "Hackathon"],
@@ -34,7 +43,7 @@ const projects: Project[] = [
   },
   
   {
-    id: 3,
+    id: 4,
     title: "YouTube Clone",
     description: "A frontend YouTube replica built with HTML, CSS & JavaScript. Features responsive design and interactive elements that mimic the real platform.",
     tags: ["HTML", "CSS", "JavaScript", "Responsive"],
@@ -43,22 +52,13 @@ const projects: Project[] = [
     githubUrl: "https://github.com/AtulSahu778/youtube-clone",
   },
   {
-    id: 4,
+    id: 5,
     title: "Amazon Clone",
     description: "A clean UI clone of the Amazon website with product listings, cart functionality, and responsive layout for different screen sizes.",
     tags: ["HTML", "CSS", "JavaScript", "E-commerce"],
     image: "https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80",
     liveUrl: "https://amazon-clone-atul-mu.vercel.app/",
     githubUrl: "https://github.com/AtulSahu778/amazon-clone",
-  },
-  {
-    id: 5,
-    title: "Portfolio Website",
-    description: "A personal animated portfolio showcasing my frontend work, designed and deployed with love. Features smooth animations and interactive elements.",
-    tags: ["HTML", "CSS", "JavaScript", "Tailwind"],
-    image: "https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80",
-    liveUrl: "https://atuldev.vercel.app/",
-    githubUrl: "https://github.com/AtulSahu778/atul-portfolio",
   },
   {
     id: 6,
