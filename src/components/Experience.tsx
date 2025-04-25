@@ -59,7 +59,7 @@ export default function Experience() {
       <div className="section-container">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            Work Experience
+          Experience
           </h2>
           <div className="h-1 w-20 bg-primary mx-auto"></div>
           <p className="mt-6 text-muted-foreground">
