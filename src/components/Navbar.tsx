@@ -43,6 +43,7 @@ export default function Navbar() {
           <span className="text-portfolio-purple">.</span>
           <span className="text-portfolio-blue">dev</span>
         </a>
+        
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6">
