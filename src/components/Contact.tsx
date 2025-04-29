@@ -104,7 +104,7 @@ export default function Contact() {
               <h3 className="text-xl font-bold mb-4">Follow Me</h3>
               <div className="flex space-x-4">
                 <a
-                  href="https://github.com/Ofc_atul"
+                  href="https://github.com/AtulSahu778"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-card hover:bg-primary/10 transition-colors p-3 rounded-full"
