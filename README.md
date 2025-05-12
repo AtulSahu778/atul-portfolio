@@ -4,7 +4,7 @@ Welcome to the official portfolio of **Atul Sahu**, a passionate Frontend Develo
 
 ## 🌐 Live Website
 
-👉 [https://applebyatul.vercel.app/](https://applebyatul.vercel.app/)
+👉 [https://applebyatul.vercel.app/](https://atuldev.vercel.app/)
 
 ## 👨‍💻 About Me
 
