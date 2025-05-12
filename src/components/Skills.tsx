@@ -24,7 +24,7 @@ const skills: Skill[] = [
   { name: "GitHub", logo: "/logos/github.svg", category: "tools" },
   { name: "Vercel", logo: "/logos/vercel.svg", category: "tools" },
   { name: "Netlify", logo: "/logos/netlify.svg", category: "tools" },
-  { name: "ChataGPT", logo: "https://cdn.worldvectorlogo.com/logos/chatgpt-3.svg", category: "tools" },
+  { name: "ChatGPT", logo: "https://cdn.worldvectorlogo.com/logos/chatgpt-3.svg", category: "tools" },
   { name: "Cursor", logo: "https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/cursor.png", category: "tools" },
   
   // Learning
