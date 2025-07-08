@@ -20,7 +20,7 @@ const projects: Project[] = [
     description: `Jigyasa AI (meaning "curiosity" in Sanskrit) is a fully responsive, feature-rich chatbot interface built around Google’s Gemini 2.0 Flash API. While it doesn't involve training a custom AI model, this project focuses on delivering an intuitive, clean, and dynamic frontend user experience for AI-powered conversations.`,
     tags: ["HTML", "CSS", "JavaScript", "Tailwind", "Responsive"],
     image: "/jigysa.png",
-    liveUrl: "https://ai-jigyasa.verce.app",
+    liveUrl: "https://ai-jigyasa.vercel.app",
     githubUrl: "https://github.com/AtulSahu778/Jigyasa-AI",
   },
   {
