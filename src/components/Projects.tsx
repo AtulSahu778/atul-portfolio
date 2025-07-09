@@ -85,7 +85,7 @@ export default function Projects() {
     : projects;
 
   return (
-    <section id="projects" className="py-16 sm:py-24 bg-secondary/50">
+    <section id="projects" className="py-24 bg-background border-t">
       <div className="section-container">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
@@ -124,7 +124,7 @@ export default function Projects() {
           {filteredProjects.map((project) => (
             <div 
               key={project.id} 
-              className="group relative overflow-hidden rounded-lg bg-card shadow-md hover:shadow-xl transition-all duration-300 animate-fade-in"
+              className="group relative overflow-hidden rounded-lg bg-card shadow-md hover:shadow-xl transition-all duration-300 animate-fade-in sm:animate-none sm:shadow-md"
             >
               <div className="aspect-video overflow-hidden">
                 <img

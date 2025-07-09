@@ -44,12 +44,10 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-16 sm:py-24 bg-secondary/50 relative">
-      <div className="absolute bottom-0 left-0 w-72 h-72 bg-portfolio-purple/10 rounded-full blur-3xl -z-10" />
-      
+    <section id="contact" className="py-16 sm:py-24 bg-background border-t">
       <div className="section-container">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-indigo-600 bg-clip-text text-transparent">
             Get In Touch
           </h2>
           <div className="h-1 w-20 bg-primary mx-auto"></div>
@@ -57,9 +55,8 @@ export default function Contact() {
             Have a project in mind or just want to chat? Feel free to reach out!
           </p>
         </div>
-        
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <div className="space-y-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="space-y-6 text-center lg:text-left">
             <h3 className="text-2xl font-bold">Contact Information</h3>
             
             <div className="space-y-6">

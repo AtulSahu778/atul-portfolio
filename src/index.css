@@ -77,6 +77,10 @@
   body {
     @apply bg-background text-foreground font-sans;
     scroll-behavior: smooth;
+    background: #101624;
+    background: radial-gradient(ellipse at 50% 30%, #23263a 0%, #101624 100%);
+    min-height: 100vh;
+    overflow-x: hidden;
   }
 
   h1, h2, h3, h4, h5, h6 {

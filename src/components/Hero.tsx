@@ -6,8 +6,8 @@ export default function Hero() {
   return (
     <section id="home" className="min-h-screen pt-20 relative overflow-hidden">
       {/* Background elements */}
-      <div className="absolute -top-20 -right-20 w-72 h-72 bg-portfolio-blue/10 rounded-full blur-3xl" />
-      <div className="absolute top-40 -left-20 w-72 h-72 bg-portfolio-purple/10 rounded-full blur-3xl" />
+      <div className="absolute -top-20 -right-20 w-72 h-72 bg-portfolio-blue/10 rounded-full blur-3xl sm:blur-md" />
+      <div className="absolute top-40 -left-20 w-72 h-72 bg-portfolio-purple/10 rounded-full blur-3xl sm:blur-md" />
       
       <div className="section-container flex flex-col justify-center min-h-[calc(100vh-80px)]">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -69,8 +69,8 @@ export default function Hero() {
           </div>
           
           <div className="relative hidden lg:block">
-            <div className="absolute -inset-0.5 bg-gradient-to-r from-portfolio-blue to-portfolio-purple rounded-2xl blur opacity-75 animate-pulse-slow"></div>
-            <div className="relative glass-card p-6 h-[450px] animate-float flex items-center justify-center">
+            <div className="absolute -inset-0.5 bg-gradient-to-r from-portfolio-blue to-portfolio-purple rounded-2xl blur opacity-75 animate-pulse-slow sm:blur-sm sm:animate-none"></div>
+            <div className="relative glass-card p-6 h-[450px] animate-float sm:animate-none flex items-center justify-center">
               <div className="text-center">
                 <div className="w-48 h-48 mx-auto mb-6 rounded-full bg-muted overflow-hidden">
                   <img src="/sideatul.png" alt="" />

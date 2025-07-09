@@ -5,8 +5,7 @@ import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 export default function About() {
   return (
-    <section id="about" className="py-16 sm:py-24 relative">
-      <div className="absolute bottom-0 left-0 w-72 h-72 bg-portfolio-blue/10 rounded-full blur-3xl -z-10" />
+    <section id="about" className="py-16 sm:py-24 bg-background border-t">
       
       <div className="section-container">
         <div className="max-w-3xl mx-auto text-center mb-16">
@@ -16,30 +15,22 @@ export default function About() {
           <div className="h-1 w-20 bg-primary mx-auto"></div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="relative group">
-            <div className="absolute -inset-1 bg-gradient-to-r from-portfolio-blue to-portfolio-purple rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000"></div>
-            <div className="relative aspect-square rounded-lg overflow-hidden">
-              <img 
-              src="/atul-sqr1.png" alt="" 
-              />
-              <div className="w-full h-full bg-muted flex items-center justify-center">
-                <div className="text-8xl font-bold text-primary"></div>
-              </div>
-              
-              <Avatar className="w-full h-full">
-                <AvatarImage 
-                  src="/lovable-uploads/5e1a46f4-b505-4576-9d8d-997129b3b9e5.png" 
-                  alt="Atul Sahu" 
-                  className="object-cover"
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+          {/* Image column: left on desktop, top on mobile */}
+          <div className="flex justify-center md:justify-start items-center md:items-center mb-8 md:mb-0 md:pl-20 md:ml-20">
+            <div className="bg-gradient-to-r from-portfolio-blue to-portfolio-purple p-1 rounded-full shadow-lg">
+              <div className="bg-white dark:bg-background rounded-full p-0.5">
+                <img
+                  src="/sideatul.png"
+                  alt="Atul Sahu side profile"
+                  className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover"
+                  loading="lazy"
                 />
-                <AvatarFallback>AS</AvatarFallback>
-              </Avatar>
-
+              </div>
             </div>
           </div>
-          
-          <div className="space-y-6">
+          {/* Text column: right on desktop, below image on mobile */}
+          <div className="space-y-6 text-center md:text-left">
             <h3 className="text-2xl font-bold">
               Hello, I'm{" "}
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-portfolio-blue to-portfolio-purple">

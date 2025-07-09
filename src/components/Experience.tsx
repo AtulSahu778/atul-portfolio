@@ -1,4 +1,3 @@
-
 import React from "react";
 
 type ExperienceItem = {
@@ -53,67 +52,47 @@ const experiences: ExperienceItem[] = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-16 sm:py-24 relative">
-      <div className="absolute top-1/2 -translate-y-1/2 right-0 w-72 h-72 bg-portfolio-blue/10 rounded-full blur-3xl -z-10" />
-      
+    <section id="experience" className="py-24 bg-background border-t">
       <div className="section-container">
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-          Experience
+        <div className="max-w-3xl mx-auto text-center mb-12">
+          <h2 className="text-4xl sm:text-5xl font-bold mb-4 bg-gradient-to-r from-teal-400 to-indigo-600 bg-clip-text text-transparent">
+            Experience
           </h2>
-          <div className="h-1 w-20 bg-primary mx-auto"></div>
-          <p className="mt-6 text-muted-foreground">
-            My professional journey in the tech industry:
+          <p className="text-lg sm:text-lg text-muted-foreground mb-6">
+            My professional journey so far
           </p>
         </div>
-        
-        <div className="relative">
-          {/* Timeline line */}
-          <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-px bg-border md:-ml-px"></div>
-          
-          <div className="space-y-12">
-            {experiences.map((item, index) => (
-              <div key={item.id} className="relative">
-                <div className={`flex flex-col md:flex-row items-start ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
-                  {/* Timeline dot */}
-                  <div className="absolute hidden md:block left-0 md:left-1/2 top-0 w-6 h-6 rounded-full border-4 border-primary bg-background md:-ml-3 z-10"></div>
-                  
-                  {/* Date block - Mobile version shows on left, desktop alternates */}
-                  <div className="md:w-1/2 md:pr-12 md:pl-0 pl-10 mb-6 md:mb-0">
-                    <div className={`md:text-right ${index % 2 === 0 ? 'md:text-left md:pl-12 md:pr-0' : ''}`}>
-                      <div className="inline-block px-4 py-1 bg-primary/10 text-primary text-sm font-medium rounded-full mb-2">
-                        {item.period}
-                      </div>
-                    </div>
+        {/* Optimized vertical timeline */}
+        <div className="relative mx-auto max-w-2xl flex flex-col gap-12 items-center">
+          {/* Centered vertical timeline */}
+          {experiences.map((exp, idx) => (
+            <div key={exp.id} className="relative flex flex-col items-center z-10 animate-fade-in w-full">
+              {/* Timeline dot and connector */}
+              <div className="flex flex-col items-center w-full">
+                <div className="w-4 h-4 rounded-full bg-gradient-to-br from-teal-400 to-indigo-600 border-4 border-background shadow-md" />
+                {idx < experiences.length - 1 && <div className="w-1 h-8 sm:h-12 bg-gradient-to-b from-teal-400 to-indigo-600" />}
+              </div>
+              {/* Card */}
+              <div className="w-full max-w-lg mt-8">
+                <div className="relative bg-white/60 dark:bg-background/80 rounded-xl p-6 shadow-md border border-teal-100 dark:border-indigo-900 transition-all duration-200 mx-auto">
+                  <span className="absolute -top-6 left-1/2 -translate-x-1/2 bg-gradient-to-r from-teal-400 to-indigo-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow border border-white/30">
+                    {exp.period}
+                  </span>
+                  <div className="flex flex-col gap-1 mb-2">
+                    <span className="font-semibold text-lg text-teal-600 dark:text-teal-400">{exp.role}</span>
                   </div>
-                  
-                  {/* Content block */}
-                  <div className={`relative md:w-1/2 md:pl-12 pl-10 ${index % 2 === 0 ? 'md:pr-12 md:pl-0' : ''}`}>
-                    {/* Mobile timeline dot */}
-                    <div className="absolute left-0 top-0 w-4 h-4 rounded-full border-4 border-primary bg-background -ml-2 md:hidden"></div>
-                    
-                    <div className="glass-card p-6 animate-fade-in">
-                      <h3 className="text-xl font-bold">{item.role}</h3>
-                      <div className="flex items-center text-muted-foreground mb-4">
-                        <span>{item.company}</span>
-                        <span className="mx-2">•</span>
-                        <span>{item.location}</span>
-                      </div>
-                      
-                      <ul className="space-y-2">
-                        {item.description.map((desc, i) => (
-                          <li key={i} className="flex">
-                            <span className="mr-2">•</span>
-                            <span>{desc}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
+                  <span className="block font-medium text-indigo-700 dark:text-indigo-300 mb-1 text-base">
+                    {exp.company} <span className="text-xs text-muted-foreground">({exp.location})</span>
+                  </span>
+                  <ul className="list-disc pl-5 text-muted-foreground text-base space-y-1">
+                    {exp.description.map((desc, i) => (
+                      <li key={i}>{desc}</li>
+                    ))}
+                  </ul>
                 </div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
