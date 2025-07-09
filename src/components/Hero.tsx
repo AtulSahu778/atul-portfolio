@@ -4,7 +4,7 @@ import Projects from "./Projects";
 
 export default function Hero() {
   return (
-    <section id="home" className="min-h-screen pt-20 relative overflow-hidden">
+    <section id="home" className="min-h-screen pt-20 relative overflow-hidden bg-background border-t">
       {/* Background elements */}
       <div className="absolute -top-20 -right-20 w-72 h-72 bg-portfolio-blue/10 rounded-full blur-3xl sm:blur-md" />
       <div className="absolute top-40 -left-20 w-72 h-72 bg-portfolio-purple/10 rounded-full blur-3xl sm:blur-md" />

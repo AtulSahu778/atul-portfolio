@@ -178,6 +178,28 @@ export default function Projects() {
               </div>
             </div>
           ))}
+          {/* Special GitHub card */}
+          <div className="group relative overflow-hidden rounded-lg bg-card shadow-md hover:shadow-xl transition-all duration-300 animate-fade-in sm:animate-none sm:shadow-md flex flex-col justify-between p-6">
+            <div className="flex flex-col items-center">
+              <Github className="h-12 w-12 text-primary mb-4" />
+              <h3 className="text-xl font-bold mb-2 text-center text-foreground">Check my GitHub</h3>
+              <p className="text-muted-foreground mb-6 text-center max-w-xs">
+                For more projects and upcoming work, visit my GitHub profile. I regularly update it with new creations and experiments!
+              </p>
+            </div>
+            <div className="flex justify-center">
+              <a
+                href="https://github.com/AtulSahu778"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block"
+              >
+                <Button size="lg" className="gap-2">
+                  <Github className="h-5 w-5" /> Visit GitHub
+                </Button>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
