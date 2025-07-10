@@ -1,23 +1,32 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react"; // fallback plugin to avoid SWC errors for now
-import path from "path";
-import { componentTagger } from "lovable-tagger";
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import path from 'path'
 
 // https://vitejs.dev/config/
-export default defineConfig(({ mode }) => {
-  return {
-    server: {
-      host: "::",
-      port: 8080,
+export default defineConfig({
+  plugins: [react()],
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
     },
-    plugins: [
-      react(),
-      mode === "development" && componentTagger(),
-    ].filter(Boolean),
-    resolve: {
-      alias: {
-        "@": path.resolve(__dirname, "./src"),
-      },
+  },
+  build: {
+    rollupOptions: {
+      external: ['fsevents'],
+      output: {
+        manualChunks: undefined,
+      }
     },
-  };
-});
+    commonjsOptions: {
+      transformMixedEsModules: true
+    },
+    target: 'esnext',
+    minify: 'esbuild'
+  },
+  optimizeDeps: {
+    exclude: ['fsevents']
+  },
+  esbuild: {
+    target: 'esnext'
+  }
+})
