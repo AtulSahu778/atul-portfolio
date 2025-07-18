@@ -38,7 +38,7 @@ const projects: Project[] = [
     description: "AI Image Generator",
     tags: ["HTML", "CSS", "JavaScript", "API"],
     image: "/artifex.png",
-    liveUrl: "artifex-app.vercel.app/",
+    liveUrl: "https://artifex-app.vercel.app/",
     githubUrl: "https://github.com/AtulSahu778/artifex-ai",
   },
   
