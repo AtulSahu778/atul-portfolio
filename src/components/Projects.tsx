@@ -34,12 +34,12 @@ const projects: Project[] = [
   },
   {
     id: 3,
-    title: "Gramseva",
-    description: "Hackathon project to support rural populations with healthcare and sustainable development solutions. Focused on accessibility and user-friendly interfaces.",
-    tags: ["HTML", "CSS", "JavaScript", "Hackathon"],
-    image: "/screenshot.png",
-    liveUrl: "https://hackathon-arka-jain.vercel.app/",
-    githubUrl: "https://github.com/AtulSahu778/gramseva-hck114",
+    title: "Artifex Ai",
+    description: "AI Image Generator",
+    tags: ["HTML", "CSS", "JavaScript", "API"],
+    image: "/artifex.png",
+    liveUrl: "artifex-app.vercel.app/",
+    githubUrl: "https://github.com/AtulSahu778/artifex-ai",
   },
   
   {
