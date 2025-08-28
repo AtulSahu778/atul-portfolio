@@ -38,13 +38,14 @@ export default function About() {
               </span>
             </h3>
             
-            <p className="text-muted-foreground">
-              I'm a passionate frontend developer skilled in HTML, CSS, and JavaScript. I love building smooth, user-friendly interfaces that bring ideas to life.
+              <p className="text-muted-foreground">
+              I'm a passionate frontend developer skilled in <span className="font-semibold">HTML, CSS, JavaScript, and React</span>, with a strong foundation in <span className="font-semibold">C and C++</span>. I enjoy creating smooth, user-friendly interfaces that bring ideas to life.
             </p>
-            
-            <p className="text-muted-foreground">
-              I'm currently exploring full-stack development and leveling up through hackathons and real-world projects. When I'm not coding, you can find me exploring new technologies and contributing to open-source projects.
-            </p>
+
+          <p className="text-muted-foreground">
+            I'm currently exploring <span className="font-semibold">full-stack development</span> and leveraging <span className="font-semibold">AI tools</span> to build innovative, real-world solutions. Beyond coding, I actively participate in hackathons, explore new technologies, and contribute to open-source projects.
+          </p>
+
 
 
             <a href="/Atul-Resume1.pdf" download>

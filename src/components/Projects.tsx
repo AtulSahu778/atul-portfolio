@@ -14,6 +14,15 @@ type Project = {
 };
 
 const projects: Project[] = [
+   {
+    id: 0,
+    title: "SXC-ScholarHub",
+    description: `To centralize academic resources (notes, papers, assignments) for St. Xavier’s College students with secure access, easy search, and a smart personalized dashboard`,
+    tags: ["HTML", "CSS", "JavaScript", "Tailwind", "Responsive"],
+    image: "/jigysa.png",
+    liveUrl: "https://sxchub.vercel.app",
+    githubUrl: "https://github.com/AtulSahu778/",
+  },
   {
     id: 1,
     title: "Jigyasa AI",
