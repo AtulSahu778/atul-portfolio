@@ -19,7 +19,7 @@ const projects: Project[] = [
     title: "SXC-ScholarHub",
     description: `To centralize academic resources (notes, papers, assignments) for St. Xavier’s College students with secure access, easy search, and a smart personalized dashboard`,
     tags: ["HTML", "CSS", "JavaScript", "Tailwind", "Responsive"],
-    image: "/jigysa.png",
+    image: "/scholarhub.png",
     liveUrl: "https://sxchub.vercel.app",
     githubUrl: "https://github.com/AtulSahu778/",
   },
