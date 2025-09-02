@@ -39,7 +39,7 @@ export default function About() {
             </h3>
             
        <p className="text-muted-foreground">
-  I don't just build responsive applications; I build anticipatory ones. As a Full-Stack Developer, I leverage the MERN stack and specialize in integrating advanced <span className="font-semibold">AI models</span> to create predictive, intelligent features that solve problems before they arise.
+  I don't just build applications; I build anticipatory ones. As a Full-Stack Developer, I leverage the MERN stack and specialize in integrating advanced <span className="font-semibold">AI models</span> to create predictive, intelligent features that solve problems before they arise.
 </p>
 
 
