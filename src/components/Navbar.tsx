@@ -56,9 +56,9 @@ export default function Navbar() {
             ))}
           </ul>
           <ThemeToggle />
-          <a href="/Atul-Resume1.pdf" download>
+          {/* <a href="/Atul-Resume1.pdf" download>
           <Button size="sm">Resume</Button>
-          </a>
+          </a> */}
           
         </nav>
 
@@ -95,7 +95,7 @@ export default function Navbar() {
                 {link.name}
               </a>
             ))}
-            <Button className="mt-4 w-full">Resume</Button>
+            {/* <Button className="mt-4 w-full">Resume</Button> */}
           </div>
         </div>
       )}
