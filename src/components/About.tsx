@@ -38,21 +38,16 @@ export default function About() {
               </span>
             </h3>
             
-              <p className="text-muted-foreground">
-              I'm a passionate frontend developer skilled in <span className="font-semibold">HTML, CSS, JavaScript, and React</span>, with a strong foundation in <span className="font-semibold">C and C++</span>. I enjoy creating smooth, user-friendly interfaces that bring ideas to life.
-            </p>
-
-          <p className="text-muted-foreground">
-            I'm currently exploring <span className="font-semibold">full-stack development</span> and leveraging <span className="font-semibold">AI tools</span> to build innovative, real-world solutions. Beyond coding, I actively participate in hackathons, explore new technologies, and contribute to open-source projects.
-          </p>
+       <p className="text-muted-foreground">
+  I don't just build responsive applications; I build anticipatory ones. As a Full-Stack Developer, I leverage the MERN stack and specialize in integrating advanced <span className="font-semibold">AI models</span> to create predictive, intelligent features that solve problems before they arise.
+</p>
 
 
-
-            <a href="/Atul-Resume1.pdf" download>
+            {/* <a href="/Atul-Resume1.pdf" download>
               <Button className="gap-2">
                 <FileText className="h-4 w-4" /> Download Resume
               </Button>
-            </a>
+            </a> */}
 
           </div>
         </div>
